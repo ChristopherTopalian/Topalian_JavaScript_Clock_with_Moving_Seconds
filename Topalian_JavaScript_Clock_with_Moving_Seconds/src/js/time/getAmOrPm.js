@@ -2,16 +2,17 @@
 
 function getAmOrPm()
 {
+    let hours = new Date().getHours();
+
     let amOrPm;
 
-    // am or pm
-    if (getHours() < 12)
+    if (hours < 12)
     {
         amOrPm = "AM";
     }
     else
     {
-        amOrPm = "PM"
+        amOrPm = "PM";
     }
 
     return amOrPm;
@@ -24,4 +25,3 @@ function getAmOrPm()
 // https://github.com/ChristopherTopalian
 // https://github.com/ChristopherAndrewTopalian
 // https://sites.google.com/view/CollegeOfScripting
-
